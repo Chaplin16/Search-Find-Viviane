@@ -1,0 +1,19 @@
+{
+  "name": "search-find",
+  "version": "1.0.0",
+  "description": "Search and Find in the hand and Art ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaplin16/Search-Find-Viviane.git"
+  },
+  "author": "AURORE CREATION WEB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaplin16/Search-Find-Viviane/issues"
+  },
+  "homepage": "https://github.com/Chaplin16/Search-Find-Viviane#readme"
+}
