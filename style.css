@@ -28,9 +28,6 @@ h1 {
   align-items: center;
   margin: 2rem auto;
 }
-.games-container .game:not(:nth-of-type(1)) {
-  display: none;
-}
 .games-container .game .reference {
   display: flex;
   flex-direction: column;
