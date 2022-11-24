@@ -1,0 +1,6 @@
+//display navbar max 680px
+@keyframes appearNavbar {
+    0% { transform: translateY(-250px) }
+   50% {transform: translateY(0px)}
+  100% { transform: translateY(0px) }
+  }
