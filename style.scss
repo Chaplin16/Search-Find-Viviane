@@ -39,7 +39,7 @@ h1{
             padding-bottom: 1rem;
             & img{
                 width: 70%;
-                max-width: 650px;
+                max-width: 480px;
                 height: auto;
                 border: 2mm ridge rgba(179, 180, 148, 0.6);
             }
@@ -87,29 +87,12 @@ h1{
 
 
 
-// @media screen and (min-width: 400px){
-//     .games-container .game .choices{
-//         li {
-//         max-width: 30%;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 500px){
-//     .games-container .game .choices{
-//         li {
-//         max-width: 140px;
-//         }
-//     }
-// }
-
 @media screen and (min-width: 750px){
-    .games-container .choices{
-        li {
+    .games-container .choices li {
         width: 280px!important;
         & img{
             max-width: 300px!important;
+            max-height: 300px;
         }
-        }
-    } 
-}
+    }
+} 

@@ -44,7 +44,7 @@ h1 {
 }
 .games-container .game .reference img {
   width: 70%;
-  max-width: 650px;
+  max-width: 480px;
   height: auto;
   border: 2mm ridge rgba(179, 180, 148, 0.6);
 }
@@ -92,6 +92,7 @@ h1 {
   }
   .games-container .choices li img {
     max-width: 300px !important;
+    max-height: 300px;
   }
 }
 
