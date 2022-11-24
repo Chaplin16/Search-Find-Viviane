@@ -72,7 +72,7 @@ h1 {
   text-align: left;
   cursor: pointer;
   width: 40%;
-  max-width: 200px;
+  max-width: 130px;
   height: auto;
 }
 .games-container .game .choices li p {
@@ -81,7 +81,7 @@ h1 {
   font-weight: 600;
 }
 .games-container .game .choices li img {
-  width: 85%;
+  width: 100%;
   max-width: 200px;
   height: auto;
 }
