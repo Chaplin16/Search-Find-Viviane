@@ -19,9 +19,9 @@ h1{
     margin: 100px 0;
     text-align: center;
     .game{
-        display: flex!important;
+        display: flex;
         flex-direction: column;
-        row-gap:2rem;
+        row-gap:1rem;
         align-items: center;
         margin: 2rem auto;
         border: 1px solid rgb(189, 187, 187);
@@ -36,15 +36,15 @@ h1{
             display: flex; 
             flex-direction: column;
             align-items: center;
+            padding-bottom: 1rem;
             & img{
-                width: 80%;
+                width: 70%;
                 max-width: 650px;
                 height: auto;
-                
                 border: 2mm ridge rgba(179, 180, 148, 0.6);
             }
             & p {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 font-style: italic;
                 margin-bottom: 2px;
                 font-weight: 600;
@@ -52,6 +52,7 @@ h1{
             }
             span{
                 width: 60%;
+                font-size: 0.7rem;
             }
         }
         .choices{
@@ -75,7 +76,7 @@ h1{
                 font-weight: 600;
                 }
                 & img{
-                    width: 100%;
+                    width: 85%;
                     max-width: 200px;
                     height: auto;
                 }
