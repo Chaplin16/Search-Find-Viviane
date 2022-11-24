@@ -21,29 +21,5 @@ h1{
 }
 
 
-@media screen and (min-width: 680px){
-    nav{
-        background-color: #111;
-        .tabs-btn-nav{
-            display: flex!important;
-            flex-direction: row!important;
-            padding-top: 2rem;
-            &.status{
-                flex-direction: row!important;
-            }
-        }
-        .navToggler{
-            display: none!important;
-        }
-    }
-}
 
-@media screen and (min-width: 750px){
-    .games-container .choices li {
-        width: 280px!important;
-        & img{
-            max-width: 300px!important;
-            max-height: 300px;
-        }
-    }
-} 
+

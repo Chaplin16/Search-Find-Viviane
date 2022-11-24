@@ -66,3 +66,20 @@ nav{
     }
 }
 
+
+@media screen and (min-width: 680px){
+    nav{
+        background-color: #111;
+        .tabs-btn-nav{
+            display: flex!important;
+            flex-direction: row!important;
+            padding-top: 2rem;
+            &.status{
+                flex-direction: row!important;
+            }
+        }
+        .navToggler{
+            display: none!important;
+        }
+    }
+}

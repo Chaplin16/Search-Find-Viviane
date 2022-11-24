@@ -69,3 +69,13 @@
         }
     }
 }
+
+@media screen and (min-width: 750px){
+    .games-container .choices li {
+        width: 280px!important;
+        & img{
+            max-width: 300px!important;
+            max-height: 300px;
+        }
+    }
+} 
