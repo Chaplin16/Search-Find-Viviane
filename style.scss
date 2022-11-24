@@ -1,3 +1,10 @@
+
+@keyframes appearNavbar {
+    0% { transform: translateY(-250px) }
+   50% {transform: translateY(0px)}
+  100% { transform: translateY(0px) }
+  }
+  
 body{
     box-sizing: border-box;
     margin: 0;
@@ -65,26 +72,18 @@ nav{
             flex-basis: 100%;
             font-size: clamp(15px, 2vw, 20px);
             font-weight: 300;
-            padding: 10px 0;
+            padding: 10px 0 10px 20px;
             cursor: pointer;
-            &:not(:nth-child(4),:nth-child(1)){
-                border-right: 1px solid #ffffff3e;
-            }
             &:hover{
                 color: #f2bf16;
-            }
-            
-        } 
-        .active-tab{
-
-            color: #fff;
-        }  
+            }          
+        }
     }
     .tabs-btn-nav.status{
         display: flex;
         flex-direction: column!important;
         align-items: start;
-        animation: appearNavbar 1000ms ease-in-out;            
+        animation: appearNavbar 1500ms ease-in-out;            
     }
 }
 
@@ -191,13 +190,17 @@ nav{
 @media screen and (min-width: 680px){
     nav{
         background-color: #111;
-    }
-    nav .tabs-btn-nav{
-        display: flex!important;
-        flex-direction: row!important;
-    }
-    nav .navToggler{
-        display: none!important;
+        .tabs-btn-nav{
+            display: flex!important;
+            flex-direction: row!important;
+            padding-top: 2rem;
+            &.status{
+                flex-direction: row!important;
+            }
+        }
+        .navToggler{
+            display: none!important;
+        }
     }
 }
 

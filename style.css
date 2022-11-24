@@ -1,3 +1,14 @@
+@keyframes appearNavbar {
+  0% {
+    transform: translateY(-250px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 body {
   box-sizing: border-box;
   margin: 0;
@@ -66,23 +77,17 @@ nav .tabs-btn-nav .tab {
   flex-basis: 100%;
   font-size: clamp(15px, 2vw, 20px);
   font-weight: 300;
-  padding: 10px 0;
+  padding: 10px 0 10px 20px;
   cursor: pointer;
-}
-nav .tabs-btn-nav .tab:not(:nth-child(4), :nth-child(1)) {
-  border-right: 1px solid rgba(255, 255, 255, 0.2431372549);
 }
 nav .tabs-btn-nav .tab:hover {
   color: #f2bf16;
-}
-nav .tabs-btn-nav .active-tab {
-  color: #fff;
 }
 nav .tabs-btn-nav.status {
   display: flex;
   flex-direction: column !important;
   align-items: start;
-  animation: appearNavbar 1000ms ease-in-out;
+  animation: appearNavbar 1500ms ease-in-out;
 }
 
 .games-container {
@@ -185,12 +190,14 @@ nav .tabs-btn-nav.status {
   nav {
     background-color: #111;
   }
-
   nav .tabs-btn-nav {
     display: flex !important;
     flex-direction: row !important;
+    padding-top: 2rem;
   }
-
+  nav .tabs-btn-nav.status {
+    flex-direction: row !important;
+  }
   nav .navToggler {
     display: none !important;
   }
