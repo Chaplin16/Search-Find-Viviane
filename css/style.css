@@ -49,7 +49,7 @@ nav ul .active {
 }
 .games-container h2 {
   color: rgb(148, 146, 146);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin: 0 !important;
   align-self: flex-start;
@@ -62,11 +62,11 @@ nav ul .active {
   row-gap: 1rem;
   align-items: center;
   margin: 2rem auto;
-  border: 1px solid rgb(189, 187, 187);
+  border: 1px solid rgb(228, 226, 226);
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 2px 2px 4px rgb(189, 187, 187);
-  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px rgb(197, 197, 197);
+  background-color: rgb(248, 248, 248);
 }
 .games-container .game:not(:nth-of-type(1)) {
   display: none;
@@ -143,11 +143,15 @@ nav ul .active {
 }
 body {
   box-sizing: border-box;
-  margin: auto;
   padding: 0;
-  width: 100%;
   font-size: 13px;
+}
+
+header,
+main {
+  margin: auto;
   max-width: 1000px;
+  width: 100%;
 }
 
 ul {
@@ -158,7 +162,6 @@ footer {
   height: 3rem;
   background-color: #000;
   max-width: 100% !important;
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

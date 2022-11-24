@@ -5,22 +5,25 @@
   
 body{
     box-sizing: border-box;
-    margin: auto;
     padding:0;
-    width:100%;
     font-size: 13px;
-    max-width: 1000px;
 }
+
+header, 
+main{   
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
 ul{
     padding-inline-start: 0!important;
 }
-
 
 footer{
     height: 3rem;
     background-color: #000;
     max-width: 100%!important;
-    width: 100%;
 }
 
 
