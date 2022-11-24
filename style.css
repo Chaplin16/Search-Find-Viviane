@@ -86,6 +86,31 @@ h1 {
   height: auto;
 }
 
+.footer {
+  color: #fff;
+  text-align: center;
+  background-color: #082a69;
+}
+.footer .h4 {
+  padding: 1rem 0;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.footer hr {
+  width: 2.5rem;
+}
+.footer .social-networks img {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 45%;
+  background-color: #fff;
+}
+.footer p {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  margin: 0;
+}
+
 @media screen and (min-width: 750px) {
   .games-container .choices li {
     width: 280px !important;
