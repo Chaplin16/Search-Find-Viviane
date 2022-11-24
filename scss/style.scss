@@ -1,32 +1,26 @@
 @import "layout/navbar";
 @import "layout/games";
-@import "layout/footer";
 @import "utils/keyframes";
 
   
 body{
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     padding:0;
     width:100%;
     font-size: 13px;
+    max-width: 1000px;
 }
 ul{
     padding-inline-start: 0!important;
 }
-h1{
-    color:#08119e;
-    font-weight: bold;
-    font-size: 2.5rem;
-}
 
-h2{
-    text-align: center;
-    color: #f2bf16;
-    font-size: 2rem;
-    width: 90%;
-    max-width: 950px;
 
+footer{
+    height: 3rem;
+    background-color: #000;
+    max-width: 100%!important;
+    width: 100%;
 }
 
 

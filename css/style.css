@@ -1,10 +1,11 @@
 nav {
-  padding-left: 10%;
+  padding-left: 1rem;
 }
 nav ul {
   display: flex;
   justify-content: flex-start;
   column-gap: 2rem;
+  row-gap: 2rem;
   flex-wrap: wrap;
   list-style: none;
   padding: 2rem 0;
@@ -14,6 +15,7 @@ nav ul .tab {
   text-decoration: none;
   font-weight: 300;
   cursor: pointer;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 nav ul .tab:hover {
@@ -24,6 +26,7 @@ nav ul .active {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 5px 0;
+  font-weight: 600;
 }
 
 .games-container {
@@ -31,6 +34,27 @@ nav ul .active {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.games-container-banner {
+  width: 100%;
+}
+.games-container h1 {
+  color: #000;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 300 !important;
+  text-align: left !important;
+  width: 90%;
+  padding-top: 7vh;
+}
+.games-container h2 {
+  color: rgb(148, 146, 146);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 !important;
+  align-self: flex-start;
+  text-align: left;
+  padding-left: 5%;
 }
 .games-container .game {
   display: flex;
@@ -106,31 +130,6 @@ nav ul .active {
     max-height: 300px;
   }
 }
-.footer {
-  color: #fff;
-  text-align: center;
-  background-color: #082a69;
-}
-.footer .h4 {
-  padding: 1rem 0;
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-.footer hr {
-  width: 2.5rem;
-}
-.footer .social-networks img {
-  margin: 10px;
-  padding: 5px;
-  border-radius: 45%;
-  background-color: #fff;
-}
-.footer p {
-  padding-bottom: 1rem;
-  font-size: 1rem;
-  margin: 0;
-}
-
 @keyframes appearNavbar {
   0% {
     transform: translateY(-250px);
@@ -144,28 +143,22 @@ nav ul .active {
 }
 body {
   box-sizing: border-box;
-  margin: 0;
+  margin: auto;
   padding: 0;
   width: 100%;
   font-size: 13px;
+  max-width: 1000px;
 }
 
 ul {
   padding-inline-start: 0 !important;
 }
 
-h1 {
-  color: #08119e;
-  font-weight: bold;
-  font-size: 2.5rem;
-}
-
-h2 {
-  text-align: center;
-  color: #f2bf16;
-  font-size: 2rem;
-  width: 90%;
-  max-width: 950px;
+footer {
+  height: 3rem;
+  background-color: #000;
+  max-width: 100% !important;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
