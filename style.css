@@ -63,33 +63,6 @@ nav .tabs-btn-nav.status {
   animation: appearNavbar 1500ms ease-in-out;
 }
 
-@keyframes appearNavbar {
-  0% {
-    transform: translateY(-250px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-size: 13px;
-}
-
-ul {
-  padding-inline-start: 0 !important;
-}
-
-h1 {
-  text-align: center;
-}
-
 .games-container {
   display: flex;
   flex-direction: column;
@@ -159,6 +132,33 @@ h1 {
   width: 100%;
   max-width: 200px;
   height: auto;
+}
+
+@keyframes appearNavbar {
+  0% {
+    transform: translateY(-250px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+ul {
+  padding-inline-start: 0 !important;
+}
+
+h1 {
+  text-align: center;
 }
 
 .footer {
