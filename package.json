@@ -4,7 +4,7 @@
   "description": "Search and Find in the hand and Art ",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style.scss:./style.css"
+    "sass": "sass --watch ./scss/style.scss:./style.css"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
-@import "scss/layout/navbar";
-@import "scss/layout/games";
-@import "scss/layout/footer";
-@import "scss/utils/keyframes";
+@import "layout/navbar";
+@import "layout/games";
+@import "layout/footer";
+@import "utils/keyframes";
 
   
 body{
@@ -25,7 +25,7 @@ h2{
     color: #f2bf16;
     font-size: 2rem;
     width: 90%;
-
+    max-width: 950px;
 }
 
 
