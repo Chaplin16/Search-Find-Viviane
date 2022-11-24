@@ -6,6 +6,7 @@ nav .navToggler {
   z-index: 10;
   height: 40px;
   width: 40px;
+  padding: 1.5rem;
   border: none;
   outline: none;
   display: flex;
@@ -208,7 +209,16 @@ ul {
 }
 
 h1 {
+  color: #08119e;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h2 {
   text-align: center;
+  color: #f2bf16;
+  font-size: 2rem;
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */
