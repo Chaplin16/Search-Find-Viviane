@@ -14,9 +14,24 @@
 
 <body>
     <header>
-        <h1>Trouvez la correspondance entre la scène de hanball et un des peintures historiques au dessous</h1>
+        <nav id="nav">
+            <button type="button" aria-label="menu de navigation" class="navToggler">
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="line l3"></span>
+            </button>
+            <div class="tabs-btn-nav">
+                <a href="#services" class="tab">Accueil</a>
+                <a href="#portfolio" class="tab">A propos</a>
+                <a href="/fees.html" class="tab">Qui sommes-nous?</a>
+                <a href="/tutos.html" class="tab">Séances & ateliers</a>
+                <a href="/opinions.html" class="tab">Contact</a>
+            </div>
+        </nav>
     </header>
+    
     <main class="games-container">
+        <h1>Trouvez la correspondance entre la scène de hanball et un des peintures historiques au dessous</h1>
         <!-- first game -->
         <div class="game">
             <div class="reference">
@@ -374,8 +389,8 @@
         </div>
     </footer>
 
-
-    <script src="index.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/game.js"></script>
 </body>
 
 </html>

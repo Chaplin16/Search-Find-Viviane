@@ -12,11 +12,87 @@ h1{
     text-align: center;
 }
 
+nav{
+    width:100%!important;
+    background-color: #fff!important;
+    .navToggler{
+        z-index: 10;
+        height: 40px;
+        width: 40px;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        background: transparent;
+        & .line{
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #1347a8;
+            transition: transform 300ms ease-out, opacity 0.1s ease-out;
+        }
+        .l1{
+            transform: translateY(-10px);
+        }
+        .l3{
+            transform: translateY(10px);
+        }
+    }
+    .navToggler.active .l1{
+        transform: translateY(0px) rotate(135deg);
+    }
+
+    .navToggler.active .l2{
+        opacity: 0;
+    }
+
+    .navToggler.active .l3{
+        transform: translateY(0px) rotate(-135deg);
+    }
+
+    .tabs-btn-nav{
+        display: none;  
+        transition: all 0.5s ease-out;
+        .tab{
+            display: block;
+            background-color: #fff;
+            color: #1347a8;
+            text-align: center;
+            text-decoration: none;
+            flex-basis: 100%;
+            font-size: clamp(15px, 2vw, 20px);
+            font-weight: 300;
+            padding: 10px 0;
+            cursor: pointer;
+            &:not(:nth-child(4),:nth-child(1)){
+                border-right: 1px solid #ffffff3e;
+            }
+            &:hover{
+                color: #f2bf16;
+            }
+            
+        } 
+        .active-tab{
+
+            color: #fff;
+        }  
+    }
+    .tabs-btn-nav.status{
+        display: flex;
+        flex-direction: column!important;
+        align-items: start;
+        animation: appearNavbar 1000ms ease-in-out;            
+    }
+}
+
+
 .games-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0;
     text-align: center;
     .game{
         display: flex;
@@ -111,6 +187,19 @@ h1{
     }
 }
 
+
+@media screen and (min-width: 680px){
+    nav{
+        background-color: #111;
+    }
+    nav .tabs-btn-nav{
+        display: flex!important;
+        flex-direction: row!important;
+    }
+    nav .navToggler{
+        display: none!important;
+    }
+}
 
 @media screen and (min-width: 750px){
     .games-container .choices li {
