@@ -31,6 +31,7 @@ h1 {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 2px 2px 4px rgb(189, 187, 187);
+  background-color: rgb(241, 241, 241);
 }
 .games-container .game:not(:nth-of-type(1)) {
   display: none;
@@ -41,9 +42,10 @@ h1 {
   align-items: center;
 }
 .games-container .game .reference img {
-  width: 70%;
+  width: 80%;
+  max-width: 650px;
   height: auto;
-  overflow: hidden;
+  border: 2mm ridge rgba(179, 180, 148, 0.6);
 }
 .games-container .game .reference p {
   font-size: 0.9rem;
