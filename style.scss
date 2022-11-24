@@ -19,7 +19,7 @@ h1{
     margin: 100px 0;
     text-align: center;
     .game{
-        display: flex;
+        display: flex!important;
         flex-direction: column;
         row-gap:2rem;
         align-items: center;

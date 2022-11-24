@@ -22,7 +22,7 @@ h1 {
   text-align: center;
 }
 .games-container .game {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   row-gap: 2rem;
   align-items: center;
