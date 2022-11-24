@@ -1,21 +1,29 @@
+nav {
+  padding-left: 10%;
+}
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  column-gap: 2rem;
   flex-wrap: wrap;
   list-style: none;
+  padding: 2rem 0;
 }
 nav ul .tab {
   color: #cccccc;
-  text-align: center;
   text-decoration: none;
-  flex-basis: 100%;
   font-weight: 300;
-  padding: 10px 0 10px 20px;
   cursor: pointer;
   text-transform: uppercase;
 }
 nav ul .tab:hover {
   color: #000;
+}
+nav ul .active {
+  color: #000;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
 }
 
 .games-container {
