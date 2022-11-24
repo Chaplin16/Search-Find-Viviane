@@ -159,9 +159,10 @@ ul {
 }
 
 footer {
-  height: 3rem;
+  padding: 2rem;
   background-color: #000;
   max-width: 100% !important;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
