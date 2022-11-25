@@ -31,7 +31,6 @@ let timeOut;
 const init = async (ele) => {
   ele.classList.remove("green");
   ele.classList.remove("red");
-  ele.classList.remove("tremolo");
   clearTimeout(timeOut);
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -51,11 +50,10 @@ games.forEach((game, i) => {
       await init(game);
     }, 500)
     if (isRight) {
-      image.classList.add("valid");
       games[i + 1].style.display = "block";
       games[i + 1].scrollIntoView({ behavior: "smooth" });
     } else {
-      game.classList.add("tremolo");
+      game.classList.add("red");
     }
   }));
 });
