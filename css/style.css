@@ -66,7 +66,7 @@ nav ul .active {
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 1px 1px 7px rgb(197, 197, 197);
-  background-color: rgb(248, 248, 248);
+  transition: all 300ms;
 }
 .games-container .game:not(:nth-of-type(1)) {
   display: none;
@@ -135,15 +135,21 @@ nav ul .active {
     max-height: 300px;
   }
 }
-@keyframes appearNavbar {
+@keyframes CardHoverFalse {
   0% {
-    transform: translateY(-250px);
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-20px);
   }
   50% {
-    transform: translateY(0px);
+    transform: translateX(0);
+  }
+  70% {
+    transform: translateX(-10px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateX(0);
   }
 }
 body {
@@ -171,11 +177,16 @@ footer {
 }
 
 .red {
-  background-color: rgb(241, 50, 50);
+  background-color: rgba(255, 0, 0, 0.6431372549) !important;
+  animation: CardHoverFalse 300ms ease-in;
 }
 
 .green {
-  background-color: rgb(79, 170, 79);
+  background-color: rgba(108, 231, 108, 0.6784313725) !important;
+}
+
+.grey {
+  background-color: #f8f8f8 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
